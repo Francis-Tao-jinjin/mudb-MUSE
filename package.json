@@ -1,0 +1,20 @@
+{
+  "name": "muse-board",
+  "version": "0.0.1",
+  "description": "muse-board use with mudb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browserify ./js/main.js -o bundle.js -t [ babelify --presets [ env ] ] && http-server . -p 8000"
+  },
+  "author": "taojinjin",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-helper-replace-supers": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babelify": "^7.3.0",
+    "watchify": "^3.9.0"
+  }
+}
